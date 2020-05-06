@@ -1,5 +1,6 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const miniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry : './src/index.js',
@@ -16,7 +17,7 @@ module.exports = {
         {
             test : /\.scss$/,
             use : [
-                'style-loader',
+                miniCssExtractPlugin.loader,
                 'css-loader',
                 'sass-loader'
             ]
@@ -25,7 +26,10 @@ module.exports = {
     plugins : [
         new htmlWebpackPlugin({
             template: path.join(__dirname, './public/index.html'),
-            filename: path.join(__dirname, './dist/index.html')
+            filename: 'index.html'
+        }),
+        new miniCssExtractPlugin({
+          filename: 'style.css'
         })
     ],
     devtool: 'cheap-eval-source-map'

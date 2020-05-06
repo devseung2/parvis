@@ -1,6 +1,10 @@
 # parvis
 ## 디앤아이파비스 코딩 테스트
 
+### v 1.0.2 : webpack.config.js 파일 수정
+- webpack.config.js : 웹팩 설정 추가(mini-css-extract-plugin 설정 추가)
+: 별도의 css 파일로 분리해서 하나의 파일로 번들링
+
 ### v 1.0.1 : 메인, 로그인 페이지 추가, 메뉴(Header) 컴포넌트 추가, react-router-dom을 이용한 Route 설정
 - src/components
 : Header.jsx 파일 추가(메뉴 관련 컴포넌트), index.js 파일 추가(컴포넌트 관련 설정)
@@ -19,6 +23,7 @@
 - src/App.jsx, src/App.scss : 웹팩 및 바벨 테스트를 위해 임시 jsx, scss 파일 추가
 - src/index.js : base index.js 파일 추가
 
+---
 
 ### npm modules 설치
 

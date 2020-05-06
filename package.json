@@ -1,6 +1,6 @@
 {
   "name": "parvis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "parvis coding test",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   "dependencies": {
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
